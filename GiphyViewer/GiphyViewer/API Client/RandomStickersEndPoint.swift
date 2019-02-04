@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 enum RandomStickersEndPoint: APIConfiguration {
     
-    case randomStickers()
+    case randomStickers
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
@@ -31,8 +31,8 @@ enum RandomStickersEndPoint: APIConfiguration {
     // MARK: - Parameters
     var parameters: Parameters? {
         switch self {
-        case .randomStickers():
-            return [:]
+        case .randomStickers:
+            return nil
             
         }
     }

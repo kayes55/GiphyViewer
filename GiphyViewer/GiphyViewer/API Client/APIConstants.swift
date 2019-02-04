@@ -37,7 +37,8 @@ enum HTTPHeaderField: String {
 }
 
 enum ContentType: String {
-    case json = "application/x-www-form-urlencoded"
+//    case json = "application/x-www-form-urlencoded"
+    case json = "application/json"
     case formData = " x-www-form-urlencoded"
 }
 
