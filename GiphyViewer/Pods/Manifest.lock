@@ -1,16 +1,39 @@
 PODS:
   - Alamofire (5.0.0.beta.1)
+  - FLAnimatedImage (1.0.12)
+  - NSTimer-Blocks (0.0.1)
+  - ObjectMapper (3.4.2)
+  - SDWebImage/Core (4.4.5)
+  - SDWebImage/GIF (4.4.5):
+    - FLAnimatedImage (~> 1.0)
+    - SDWebImage/Core
+  - SwiftyGiphy (1.2.0):
+    - FLAnimatedImage (~> 1.0)
+    - NSTimer-Blocks
+    - ObjectMapper (~> 3.0)
+    - SDWebImage/GIF
 
 DEPENDENCIES:
   - Alamofire (~> 5.0.0.beta.1)
+  - SwiftyGiphy (~> 1.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - FLAnimatedImage
+    - NSTimer-Blocks
+    - ObjectMapper
+    - SDWebImage
+    - SwiftyGiphy
 
 SPEC CHECKSUMS:
   Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  NSTimer-Blocks: 88faf9aef5f250ead087f3f67ae642517083bf36
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  SDWebImage: ecc03494e973b93b80213649d32175f8d2d17d4d
+  SwiftyGiphy: 6fb86ca967445826a9b1aa629ce22d970bca579d
 
-PODFILE CHECKSUM: 4efabf063a0975aff081d3025d6e22920677313e
+PODFILE CHECKSUM: b10ee4cda4506c17830ce34da4a76c52cf80f7c7
 
 COCOAPODS: 1.5.3
