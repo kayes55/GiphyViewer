@@ -16,6 +16,11 @@
 		E53732A6220817FA0012079D /* GifViwerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732A5220817FA0012079D /* GifViwerCell.swift */; };
 		E53732AB22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732AA22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift */; };
 		E53732AE22081D490012079D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732AD22081D490012079D /* APIConstants.swift */; };
+		E53732B0220822FF0012079D /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732AF220822FF0012079D /* APIConfiguration.swift */; };
+		E53732B2220824400012079D /* RandomStickersEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732B1220824400012079D /* RandomStickersEndPoint.swift */; };
+		E53732B4220826630012079D /* Query.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732B3220826630012079D /* Query.swift */; };
+		E53732B6220826EA0012079D /* RandomStickerAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732B5220826EA0012079D /* RandomStickerAPI.swift */; };
+		E53732B92208280E0012079D /* RandomStickers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732B82208280E0012079D /* RandomStickers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		E53732A5220817FA0012079D /* GifViwerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViwerCell.swift; sourceTree = "<group>"; };
 		E53732AA22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewerVC_CollectionView_delegates.swift; sourceTree = "<group>"; };
 		E53732AD22081D490012079D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		E53732AF220822FF0012079D /* APIConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfiguration.swift; sourceTree = "<group>"; };
+		E53732B1220824400012079D /* RandomStickersEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomStickersEndPoint.swift; sourceTree = "<group>"; };
+		E53732B3220826630012079D /* Query.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Query.swift; sourceTree = "<group>"; };
+		E53732B5220826EA0012079D /* RandomStickerAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomStickerAPI.swift; sourceTree = "<group>"; };
+		E53732B82208280E0012079D /* RandomStickers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomStickers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +94,7 @@
 		E5373292220815250012079D /* GiphyViewer */ = {
 			isa = PBXGroup;
 			children = (
+				E53732B7220827F00012079D /* Data Models */,
 				E53732AC22081D1E0012079D /* API Client */,
 				E53732A822081ACA0012079D /* ViewControllers */,
 				E5373293220815250012079D /* AppDelegate.swift */,
@@ -125,8 +136,20 @@
 			isa = PBXGroup;
 			children = (
 				E53732AD22081D490012079D /* APIConstants.swift */,
+				E53732AF220822FF0012079D /* APIConfiguration.swift */,
+				E53732B1220824400012079D /* RandomStickersEndPoint.swift */,
+				E53732B3220826630012079D /* Query.swift */,
+				E53732B5220826EA0012079D /* RandomStickerAPI.swift */,
 			);
 			path = "API Client";
+			sourceTree = "<group>";
+		};
+		E53732B7220827F00012079D /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				E53732B82208280E0012079D /* RandomStickers.swift */,
+			);
+			path = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,10 +272,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E53732B6220826EA0012079D /* RandomStickerAPI.swift in Sources */,
 				E53732A6220817FA0012079D /* GifViwerCell.swift in Sources */,
+				E53732B2220824400012079D /* RandomStickersEndPoint.swift in Sources */,
+				E53732B0220822FF0012079D /* APIConfiguration.swift in Sources */,
 				E53732AE22081D490012079D /* APIConstants.swift in Sources */,
+				E53732B4220826630012079D /* Query.swift in Sources */,
 				E53732AB22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift in Sources */,
 				E5373296220815250012079D /* GIFViewerVC.swift in Sources */,
+				E53732B92208280E0012079D /* RandomStickers.swift in Sources */,
 				E5373294220815250012079D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class GIFViewerVC: UIViewController {
 
@@ -14,6 +15,14 @@ class GIFViewerVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        RandomStickerAPI.getRandomStickers { (result, statusCode) in
+            switch result {
+            case .success(let stickerImages):
+                print(stickerImages)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 

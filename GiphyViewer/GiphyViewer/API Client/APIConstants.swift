@@ -12,6 +12,7 @@ import Foundation
 struct Keys {
     struct ProductionServer {
         static let baseURL = "http://api.giphy.com/"
+        static let apiKey = "2gJfkGHafruIhbAWUDes84e3AM7C079f"
     }
     
     struct APIParameterKey {
