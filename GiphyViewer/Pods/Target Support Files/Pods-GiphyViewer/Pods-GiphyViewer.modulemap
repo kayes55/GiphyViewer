@@ -1,0 +1,6 @@
+framework module Pods_GiphyViewer {
+  umbrella header "Pods-GiphyViewer-umbrella.h"
+
+  export *
+  module * { export * }
+}

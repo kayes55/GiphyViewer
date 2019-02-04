@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5379438F4B5709D317234AC9 /* Pods_GiphyViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 582136C38B50F34B172436D2 /* Pods_GiphyViewer.framework */; };
 		E5373294220815250012079D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5373293220815250012079D /* AppDelegate.swift */; };
 		E5373296220815250012079D /* GIFViewerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5373295220815250012079D /* GIFViewerVC.swift */; };
 		E5373299220815250012079D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5373297220815250012079D /* Main.storyboard */; };
@@ -14,9 +15,13 @@
 		E537329E2208152E0012079D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E537329C2208152E0012079D /* LaunchScreen.storyboard */; };
 		E53732A6220817FA0012079D /* GifViwerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732A5220817FA0012079D /* GifViwerCell.swift */; };
 		E53732AB22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732AA22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift */; };
+		E53732AE22081D490012079D /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53732AD22081D490012079D /* APIConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		582136C38B50F34B172436D2 /* Pods_GiphyViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiphyViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8C8CB9ED28C9A7AE1179881 /* Pods-GiphyViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphyViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiphyViewer/Pods-GiphyViewer.debug.xcconfig"; sourceTree = "<group>"; };
+		D6B1929197BFCDCB617B16CF /* Pods-GiphyViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiphyViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiphyViewer/Pods-GiphyViewer.release.xcconfig"; sourceTree = "<group>"; };
 		E5373290220815250012079D /* GiphyViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiphyViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5373293220815250012079D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5373295220815250012079D /* GIFViewerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewerVC.swift; sourceTree = "<group>"; };
@@ -26,6 +31,7 @@
 		E537329F2208152E0012079D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53732A5220817FA0012079D /* GifViwerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViwerCell.swift; sourceTree = "<group>"; };
 		E53732AA22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFViewerVC_CollectionView_delegates.swift; sourceTree = "<group>"; };
+		E53732AD22081D490012079D /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5379438F4B5709D317234AC9 /* Pods_GiphyViewer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CDA0F31DAF8CB1B9B7705E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8C8CB9ED28C9A7AE1179881 /* Pods-GiphyViewer.debug.xcconfig */,
+				D6B1929197BFCDCB617B16CF /* Pods-GiphyViewer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B02229CCBD81F285E3D5F227 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				582136C38B50F34B172436D2 /* Pods_GiphyViewer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E5373287220815250012079D = {
 			isa = PBXGroup;
 			children = (
 				E5373292220815250012079D /* GiphyViewer */,
 				E5373291220815250012079D /* Products */,
+				6CDA0F31DAF8CB1B9B7705E3 /* Pods */,
+				B02229CCBD81F285E3D5F227 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +84,7 @@
 		E5373292220815250012079D /* GiphyViewer */ = {
 			isa = PBXGroup;
 			children = (
+				E53732AC22081D1E0012079D /* API Client */,
 				E53732A822081ACA0012079D /* ViewControllers */,
 				E5373293220815250012079D /* AppDelegate.swift */,
 				E5373297220815250012079D /* Main.storyboard */,
@@ -94,6 +121,14 @@
 			path = GIFViewerVC;
 			sourceTree = "<group>";
 		};
+		E53732AC22081D1E0012079D /* API Client */ = {
+			isa = PBXGroup;
+			children = (
+				E53732AD22081D490012079D /* APIConstants.swift */,
+			);
+			path = "API Client";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -101,9 +136,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E53732A22208152F0012079D /* Build configuration list for PBXNativeTarget "GiphyViewer" */;
 			buildPhases = (
+				F844246427DBE870D2D65E04 /* [CP] Check Pods Manifest.lock */,
 				E537328C220815250012079D /* Sources */,
 				E537328D220815250012079D /* Frameworks */,
 				E537328E220815250012079D /* Resources */,
+				CE62A851D1F6F817B6259587 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,12 +197,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CE62A851D1F6F817B6259587 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GiphyViewer/Pods-GiphyViewer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiphyViewer/Pods-GiphyViewer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F844246427DBE870D2D65E04 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiphyViewer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E537328C220815250012079D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E53732A6220817FA0012079D /* GifViwerCell.swift in Sources */,
+				E53732AE22081D490012079D /* APIConstants.swift in Sources */,
 				E53732AB22081B110012079D /* GIFViewerVC_CollectionView_delegates.swift in Sources */,
 				E5373296220815250012079D /* GIFViewerVC.swift in Sources */,
 				E5373294220815250012079D /* AppDelegate.swift in Sources */,
@@ -312,6 +397,7 @@
 		};
 		E53732A32208152F0012079D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8C8CB9ED28C9A7AE1179881 /* Pods-GiphyViewer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -330,6 +416,7 @@
 		};
 		E53732A42208152F0012079D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6B1929197BFCDCB617B16CF /* Pods-GiphyViewer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
